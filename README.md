@@ -1,0 +1,3 @@
+Example Node.js Lambda function which demonstrates how a wrapper module can bypass Lambda's log patching for Node.js.
+
+The example Lambda function is configured to call a wrapper module (using the `NODE_OPTIONS` environment variable) which uses [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) to bypass the patching of `console.log` which occurs in the Node.js runtime's _LogPatch_ module.
